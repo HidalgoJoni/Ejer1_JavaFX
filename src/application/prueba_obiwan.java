@@ -6,7 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 public class prueba_obiwan extends Application {
 	public static void main(String[] args) {
@@ -30,12 +32,10 @@ public class prueba_obiwan extends Application {
         
         // Configura la accion del boton saludar
         saludar.setOnAction(e -> {
-            String name = nombreIntroducido.getText().toString();
-			String nombreSaludo = "obi wan";
-            if (name.toLowerCase() == nombreSaludo.toLowerCase()) {
+            if (nombreIntroducido.getText().equals("Obi Wan")) {
                 msg.setText("¡General Kenobi!");
             } else {
-                msg.setText("Hola " + name);
+                msg.setText("Hola " + nombreIntroducido);
             }
         });
 
