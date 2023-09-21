@@ -30,7 +30,7 @@ public class prueba_obiwan extends Application {
         
         // Configura la accion del boton saludar
         saludar.setOnAction(e -> {
-            String name = nombreIntroducido.getText();
+            String name = nombreIntroducido.getText().toString();
 			String nombreSaludo = "obi wan";
             if (name.toLowerCase() == nombreSaludo.toLowerCase()) {
                 msg.setText("¡General Kenobi!");
