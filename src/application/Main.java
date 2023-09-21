@@ -38,7 +38,7 @@ public class Main extends Application {
         VBox raiz = new VBox();
 
         // Añade todo al VBox
-        raiz.getChildren().addAll(nombre, nombreIntroducido, msg, saludar, cerrar);
+        raiz.getChildren().addAll(nombre, nombreIntroducido, saludar, cerrar, msg);
         Scene escena = new Scene(raiz, 350, 150);
         stage.setScene(escena);
         stage.setTitle("Ejercicio Obi Wan");
